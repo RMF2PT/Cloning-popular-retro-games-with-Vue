@@ -71,8 +71,8 @@ You can check the project breadown [here](./Project%20breakdown.md)
 1. Clone the repository:
 
    ```bash
-   git clone git://github.com/???
-   cd ???
+   git clone https://github.com/RMF2PT/Cloning-popular-retro-games-with-Vue.git
+   cd Cloning-popular-retro-games-with-Vue
    ```
 
 2. (Optional) Ensure you're on Node v16 or higher:
@@ -94,9 +94,9 @@ You can check the project breadown [here](./Project%20breakdown.md)
    npm run dev
    ```
 
-5. Try out the app
+5. Try out the app:
 
-   To run locally, open https://localhost:???.
+   To run locally, open https://localhost:3000.
 
 6. Run the tests:
 
