@@ -60,7 +60,9 @@ You can check the project breadown [here](./Project%20breakdown.md)
 
 ## Want to test this repo?
 
-ℹ️ I'm assuming that you have [Node.js](https://nodejs.org/en) and [Git](https://git-scm.com/) already installed in your system.
+ℹ️ Eventualy I'll deploy the app but for the moment if you want to test it you'll have to clone the repo and run it on your local machine
+
+ℹ️ The following instructions assume that you have [Node.js](https://nodejs.org/en) and [Git](https://git-scm.com/) already installed in your system.
 
 ❗❗ This is a work in progress. Continuous testing should prevent breaking errors, but things don't always run as we expect it to.
 
@@ -96,7 +98,7 @@ You can check the project breadown [here](./Project%20breakdown.md)
 
 5. Try out the app:
 
-   To run locally, open https://localhost:3000.
+   To run locally, open http://localhost:5173
 
 6. Run the tests:
 

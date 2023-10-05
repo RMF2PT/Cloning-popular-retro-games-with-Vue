@@ -17,7 +17,7 @@ October 5, 2023
 - [Vitest](https://vitest.dev/) for Unit tests
 - [Playwright](https://playwright.dev/) for E2E tests
 
-## My IDE
+## My IDE and browser
 
 1. [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -37,8 +37,10 @@ October 5, 2023
    - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
    - [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
    - [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+   - [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
 
 3. Personal configurations
+
    - Font:
      ```json
      "terminal.integrated.fontFamily": "MesloLGS NF",
@@ -108,6 +110,8 @@ October 5, 2023
      }
      ```
 
+4. [Chrome](https://www.google.com/chrome/) with [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+
 ## Creation of the app
 
 1. (Optional) Ensure you're on [Node.js](https://nodejs.org/en) v16 or higher:
@@ -121,7 +125,8 @@ October 5, 2023
 
    ```
    npm create vue@latest
-      Project name: <your-project-name>
+      Project name: Retro-games-collection
+      Package name: retro-games-collection
       TypeScript? Yes
       Add JSX Support? No
       Add Vue Router for Single Page Application development? No
@@ -135,8 +140,9 @@ October 5, 2023
 3. Next steps:
 
    ```
-   cd <your-project-name>
+   cd Retro-games-collection
    npm install
+   npm run format
    npm run dev
    code .
    ```
@@ -146,20 +152,28 @@ The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/
 ## Planning
 
 - Vue
-  - Read [docs](https://vuejs.org/guide/quick-start.html#creating-a-vue-application)
-  - Complete [tutorial](https://vuejs.org/tutorial/#step-1)
-  - Watch [Youtube videos](https://www.youtube.com/watch?v=IgBOT0QyByQ&t)
+  - ✅ Read [docs](https://vuejs.org/guide/quick-start.html#creating-a-vue-application)
+  - 🔲 Complete [tutorial](https://vuejs.org/tutorial/#step-1)
+  - 🔲 Watch [Youtube videos](https://www.youtube.com/watch?v=IgBOT0QyByQ&t)
 - Typescript
-  - Read [docs](https://www.typescriptlang.org/docs/handbook/intro.html)
-  - Watch [Youtube Dave Gray Video](https://www.youtube.com/watch?v=gieEQFIfgYc&t)
+  - 🔲 Read [docs](https://www.typescriptlang.org/docs/handbook/intro.html)
+  - 🔲 Watch [Youtube Dave Gray Video](https://www.youtube.com/watch?v=gieEQFIfgYc&t)
+- Pinia
+  - 🔲 Read [docs](https://pinia.vuejs.org/introduction.html)
+  - Watch [Youtube videos](https://www.youtube.com/watch?v=JGC7aAC-3y8)
 - Playwright
-  - Read [docs](https://playwright.dev/docs/intro)
-  - Watch [Youtube videos](https://www.youtube.com/watch?v=wawbt1cATsk)
-  - Watch some more [Youtube videos](https://www.youtube.com/@Playwrightdev/videos)
-- [Create Vue app](https://vuejs.org/guide/quick-start.html#creating-a-vue-application)
-- Install dependencies
+  - 🔲 Read [docs](https://playwright.dev/docs/intro)
+  - 🔲 Watch [Youtube videos](https://www.youtube.com/watch?v=wawbt1cATsk)
+  - 🔲 Watch some more [Youtube videos](https://www.youtube.com/@Playwrightdev/videos)
+- 🔲 [Create Vue app](https://vuejs.org/guide/quick-start.html#creating-a-vue-application)
+- 🔲 Install dependencies
 - Test Driven Development (TDD)
-  - Write failing test
-  - Develop funcionality
-  - Test passes
-  - Repeat
+  - 🔲 Write failing test
+  - 🔲 Develop funcionality
+  - 🔲 Test passes
+  - 🔲 Repeat
+- Deploy for production
+  - 🔲 Choose a serverless deployment platform:
+    - Vercel?
+    - Netlify?
+    - Firebase?
