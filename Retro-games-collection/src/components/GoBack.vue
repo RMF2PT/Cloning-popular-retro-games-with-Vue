@@ -2,15 +2,14 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'GameCollection',
-  components: {},
-  data() {},
-  methods: {}
+  name: 'GoBack'
 })
 </script>
 
 <template>
-  <h1>Games Collection</h1>
+  <span class="go-back">
+    <button @click="$router.back">Go back</button>
+  </span>
 </template>
 
 <style scoped lang="scss">

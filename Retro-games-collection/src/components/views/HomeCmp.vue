@@ -2,14 +2,12 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'ContactCmp',
-  components: {},
-  data() {}
+  name: 'HomeCmp'
 })
 </script>
 
 <template>
-  <p>Contact</p>
+  <p>Home</p>
 </template>
 
 <style scoped lang="scss">
