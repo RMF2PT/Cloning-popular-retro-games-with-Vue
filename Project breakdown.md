@@ -129,7 +129,7 @@ October 5, 2023
       Package name: retro-games-collection
       TypeScript? Yes
       Add JSX Support? No
-      Add Vue Router for Single Page Application development? No
+      Add Vue Router for Single Page Application development? Yes
       Add Pinia for state management? Yes
       Add Vitest for Unit testing? Yes
       Add an End-to-End Testing Solution? Playwright
@@ -160,6 +160,9 @@ The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/
 - Typescript
   - 🔲 Read [docs](https://www.typescriptlang.org/docs/handbook/intro.html)
   - 🔲 Watch [Youtube Dave Gray Video](https://www.youtube.com/watch?v=gieEQFIfgYc&t)
+- Vue Router
+  - 🔲 Read [docs](https://router.vuejs.org/guide/)
+  - 🔲 Watch [tutorial](https://vueschool.io/courses/vue-router-4-for-everyone?friend=vuerouter)
 - Pinia
   - 🔲 Read [docs](https://pinia.vuejs.org/introduction.html)
   - Watch [Youtube videos](https://www.youtube.com/watch?v=JGC7aAC-3y8)

@@ -8,8 +8,8 @@ describe('NavBar', () => {
     const wrapper = mount(NavBar)
     expect(wrapper.text()).toContain('Retro Games Collection')
 
-    const h1Text = wrapper.find('h1').text()
-    expect(h1Text).toBe('Retro Games Collection')
+    const titleText = wrapper.find('#title').text()
+    expect(titleText).toBe('Retro Games Collection')
     expect(wrapper.find('span').exists()).toBe(true)
     expect(wrapper.findAll('a').length).toBe(4)
   })

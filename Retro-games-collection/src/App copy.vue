@@ -13,17 +13,21 @@ export default defineComponent({
 
 <template>
   <nav-bar></nav-bar>
-  <div class="container">
-    <router-view></router-view>
-  </div>
+  <header></header>
+
+  <main></main>
 </template>
 
 <style scoped lang="scss">
 @import '@/assets/_variables.scss';
 
-.container {
+header {
   display: flex;
   place-items: center;
   flex-flow: column;
+}
+
+.wrapper {
+  display: block;
 }
 </style>

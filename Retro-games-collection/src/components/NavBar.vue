@@ -4,18 +4,17 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'NavBar',
   components: {},
-  data() {},
-  methods: {}
+  data() {}
 })
 </script>
 
 <template>
   <nav>
-    <h1><a href="/">Retro Games Collection</a></h1>
+    <router-link to="/">Retro Games Collection</router-link>
     <span>
-      <a href="#">Games</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <router-link to="/games">Games</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/contact">Contact</router-link>
     </span>
   </nav>
 </template>
@@ -50,6 +49,10 @@ nav {
   span {
     display: flex;
     gap: 10px;
+  }
+
+  .app-active-link {
+    font-weight: bold;
   }
 }
 </style>
