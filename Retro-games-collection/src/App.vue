@@ -2,12 +2,19 @@
 import { defineComponent } from 'vue'
 import GreetingMsg from '@/components/GreetingMsg.vue'
 import HelloWorld from '@/components/HelloWorld.vue'
+import UserCmp from './components/UserCmp.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
     GreetingMsg,
-    HelloWorld
+    HelloWorld,
+    UserCmp
+  },
+  data() {
+    return {
+      age: 25
+    }
   }
 })
 </script>
@@ -19,6 +26,7 @@ export default defineComponent({
       <hello-world msg="Hello Again" />
     </div>
     <p>This is first paragraph</p>
+    <UserCmp :age="age" />
   </header>
 
   <main></main>
