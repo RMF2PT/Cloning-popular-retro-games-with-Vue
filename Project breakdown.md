@@ -123,7 +123,7 @@ October 5, 2023
 
 2. Create Vue app:
 
-   ```
+   ```bash
    npm create vue@latest
       Project name: Retro-games-collection
       Package name: retro-games-collection
@@ -139,9 +139,11 @@ October 5, 2023
 
 3. Next steps:
 
-   ```
+   ```bash
    cd Retro-games-collection
    npm install
+   #Add Sass for more powerfull css
+   npm install -D sass
    npm run format
    npm run dev
    code .
@@ -177,3 +179,7 @@ The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/
     - Vercel?
     - Netlify?
     - Firebase?
+
+## Problems
+
+- Choosing to use TypeScript has shown that learning from a beginner's tutorial, which is usually coded with the Options API, can be more difficult. While Vue does support TypeScript usage with the Options API, it is recommended to use Vue with TypeScript via the Composition API, as it offers simpler, more efficient, and more robust type inference. Check this [page](https://vuejs.org/guide/typescript/options-api.html) for more information and this [page](https://www.programcreek.com/typescript/?api=vue.defineComponent) for some code examples.

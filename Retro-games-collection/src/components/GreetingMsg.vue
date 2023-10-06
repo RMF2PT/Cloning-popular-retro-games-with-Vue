@@ -20,8 +20,12 @@ export default defineComponent({
   <p>{{ greeting }}</p>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 p {
   color: rgb(255, 0, 0);
+
+  &:hover {
+    color: darken($color: rgb(255, 0, 0), $amount: 15%);
+  }
 }
 </style>
