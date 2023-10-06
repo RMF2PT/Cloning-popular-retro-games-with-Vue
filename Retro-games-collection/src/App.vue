@@ -1,11 +1,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import GreetingMsg from '@/components/GreetingMsg.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    GreetingMsg
+    GreetingMsg,
+    HelloWorld
   }
 })
 </script>
@@ -13,7 +15,8 @@ export default defineComponent({
 <template>
   <header>
     <div class="wrapper">
-      <greetingMsg></greetingMsg>
+      <greeting-msg></greeting-msg>
+      <hello-world msg="Hello Again" />
     </div>
     <p>This is first paragraph</p>
   </header>

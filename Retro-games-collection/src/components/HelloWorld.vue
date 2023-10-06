@@ -1,7 +1,9 @@
-<script setup lang="ts">
-defineProps<{
-  msg: string
-}>()
+<script lang="ts">
+export default {
+  props: {
+    msg: String
+  }
+}
 </script>
 
 <template>
@@ -12,10 +14,6 @@ defineProps<{
 </template>
 
 <style scoped>
-.greetings {
-  height: 100vh;
-  width: 100vw;
-}
 .greetings h1,
 .greetings h3 {
   text-align: center;

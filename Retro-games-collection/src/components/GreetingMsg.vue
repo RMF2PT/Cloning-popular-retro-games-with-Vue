@@ -22,6 +22,7 @@ export default defineComponent({
 
 <style scoped lang="scss">
 p {
+  text-align: center;
   color: rgb(255, 0, 0);
 
   &:hover {
