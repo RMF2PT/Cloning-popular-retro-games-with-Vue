@@ -4,13 +4,28 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'UserCmp',
   props: {
-    age: Number
+    age: {
+      type: Number,
+      require: true,
+      // default: 25,
+      validator(value: number): boolean {
+        return value < 130
+      }
+    }
+  },
+  emits: ['age-change'],
+  methods: {
+    onClickAge(): void {
+      this.$emit('age-change', 3)
+    }
   }
 })
 </script>
 
 <template>
-  <div>User is {{ age }} years old.</div>
+  <p>User is {{ age }} years old.</p>
+
+  <button type="button" @click="onClickAge">Increase age by 3</button>
 </template>
 
 <style scoped></style>

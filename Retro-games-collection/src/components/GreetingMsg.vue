@@ -3,9 +3,15 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'GreetingMsg',
+  props: {
+    age: {
+      type: Number,
+      required: true
+    }
+  },
   data() {
     return {
-      msg: 'Hello World'
+      msg: 'Secret message'
     }
   },
   computed: {
@@ -17,7 +23,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <p>{{ greeting }}</p>
+  <p v-if="age >= 30">{{ greeting }}</p>
+  <p v-else>You must be at least 30 years old to see the secret message</p>
 </template>
 
 <style scoped lang="scss">

@@ -15,6 +15,11 @@ export default defineComponent({
     return {
       age: 25
     }
+  },
+  methods: {
+    updateAge(num: number): void {
+      this.age += num
+    }
   }
 })
 </script>
@@ -22,11 +27,11 @@ export default defineComponent({
 <template>
   <header>
     <div class="wrapper">
-      <greeting-msg></greeting-msg>
       <hello-world msg="Hello Again" />
     </div>
     <p>This is first paragraph</p>
-    <UserCmp :age="age" />
+    <user-cmp :age="age" @age-change="updateAge"></user-cmp>
+    <greeting-msg :age="age"></greeting-msg>
   </header>
 
   <main></main>
