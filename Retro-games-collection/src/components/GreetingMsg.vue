@@ -28,12 +28,14 @@ export default defineComponent({
 </template>
 
 <style scoped lang="scss">
+@import '@/assets/_variables.scss';
+
 p {
   text-align: center;
-  color: rgb(255, 0, 0);
+  color: $color-text;
 
   &:hover {
-    color: darken($color: rgb(255, 0, 0), $amount: 15%);
+    color: darken($color: $color-text, $amount: 15%);
   }
 }
 </style>

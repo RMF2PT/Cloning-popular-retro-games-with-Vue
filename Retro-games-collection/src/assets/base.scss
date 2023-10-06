@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Import sass variables */
+@import '@/assets/_variables.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+  color: $color-text;
+  background: $color-background;
+  display: flex;
+  place-items: center;
+}

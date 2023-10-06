@@ -27,5 +27,3 @@ export default defineComponent({
 
   <button type="button" @click="onClickAge">Increase age by 3</button>
 </template>
-
-<style scoped></style>

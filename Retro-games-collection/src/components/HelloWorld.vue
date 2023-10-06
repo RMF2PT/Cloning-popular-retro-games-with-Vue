@@ -16,7 +16,8 @@ export default defineComponent({
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import '@/assets/_variables.scss';
 .greetings h1,
 .greetings h3 {
   text-align: center;
