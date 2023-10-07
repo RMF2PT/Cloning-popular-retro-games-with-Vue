@@ -8,7 +8,9 @@ export default defineComponent({
 
 <template>
   <nav>
-    <router-link to="/" id="title">Retro Games Collection</router-link>
+    <router-link to="/" id="title"
+      ><font-awesome-icon icon="fa-solid fa-dice" /> Retro Games Collection</router-link
+    >
     <span>
       <router-link to="/games">Games</router-link>
       <router-link to="/about">About</router-link>

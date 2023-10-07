@@ -157,13 +157,13 @@ The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/
 - Vue
   - ✅ Read [docs](https://vuejs.org/guide/quick-start.html#creating-a-vue-application)
   - 🔲 Complete [tutorial](https://vuejs.org/tutorial/#step-1)
-  - 🔲 Watch [Youtube videos](https://www.youtube.com/watch?v=IgBOT0QyByQ&t)
+  - ✅ Watch [Youtube videos](https://www.youtube.com/watch?v=IgBOT0QyByQ&t)
 - Typescript
   - 🔲 Read [docs](https://www.typescriptlang.org/docs/handbook/intro.html)
   - 🔲 Watch [Youtube Dave Gray Video](https://www.youtube.com/watch?v=gieEQFIfgYc&t)
 - Vue Router
   - 🔲 Read [docs](https://router.vuejs.org/guide/)
-  - 🔲 Watch [tutorial](https://vueschool.io/courses/vue-router-4-for-everyone?friend=vuerouter)
+  - ✅ Watch [tutorial](https://vueschool.io/courses/vue-router-4-for-everyone?friend=vuerouter)
 - Pinia
   - 🔲 Read [docs](https://pinia.vuejs.org/introduction.html)
   - Watch [Youtube videos](https://www.youtube.com/watch?v=JGC7aAC-3y8)
@@ -172,7 +172,6 @@ The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/
   - 🔲 Watch [Youtube videos](https://www.youtube.com/watch?v=wawbt1cATsk)
   - 🔲 Watch some more [Youtube videos](https://www.youtube.com/@Playwrightdev/videos)
 - 🔲 [Create Vue app](https://vuejs.org/guide/quick-start.html#creating-a-vue-application)
-- 🔲 Install dependencies
 - Test Driven Development (TDD)
   - 🔲 Write failing test
   - 🔲 Develop funcionality
@@ -184,6 +183,7 @@ The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/
     - Netlify?
     - Firebase?
 
-## Problems encountered
+## Log:
 
 - Choosing to use TypeScript has shown that learning from a beginner's tutorial, which is usually coded with the Options API, can be more difficult. While Vue does support TypeScript usage with the Options API, it is recommended to use Vue with TypeScript via the Composition API, as it offers simpler, more efficient, and more robust type inference. Check this [page](https://vuejs.org/guide/typescript/options-api.html) for more information and this [page](https://www.programcreek.com/typescript/?api=vue.defineComponent) for some code examples.
+- Installed [FontAwesome Icons](https://fontawesome.com/v6/docs/web/use-with/vue/)
