@@ -1,44 +1,32 @@
+<template>
+  <h1 class="center">Games Collection</h1>
+  <!-- List the games in a card view -->
+  <div class="card-container">
+    <router-link
+      v-for="game in games"
+      :key="game.id"
+      :to="{ name: 'game.details', params: { id: game.id, slug: game.slug } }"
+      class="card"
+    >
+      <img :src="game.image" :alt="game.name" />
+      <h2>{{ game.name }}</h2>
+    </router-link>
+  </div>
+</template>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
+import sourceData from '@/games.json'
 
 export default defineComponent({
   name: 'GameCollection',
   data() {
     return {
-      games: [
-        {
-          id: 1,
-          name: 'Tetris',
-          image: 'https://picsum.photos/200/200?grayscale'
-        },
-        {
-          id: 2,
-          name: 'Tic-Tac-Toe',
-          image: 'https://picsum.photos/200/200?grayscale'
-        },
-        {
-          id: 3,
-          name: 'Rock, Paper, Scissors, Lizard, Spock',
-          image: 'https://picsum.photos/200/200?grayscale'
-        }
-      ]
+      games: sourceData.games
     }
   }
 })
 </script>
-
-<template>
-  <h1 class="center">Games Collection</h1>
-  <!-- List the games in a card view -->
-  <div class="card-container">
-    <div class="card" v-for="game in games" :key="game.id">
-      <!-- <router-link :to="{ name: 'GameDetails', params: { id: game.id } }"> -->
-      <img :src="game.image" :alt="game.name" />
-      <h2>{{ game.name }}</h2>
-      <!-- </router-link> -->
-    </div>
-  </div>
-</template>
 
 <style scoped lang="scss">
 @import '@/assets/_variables.scss';
@@ -61,7 +49,7 @@ export default defineComponent({
   width: 200px;
   height: 200px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
 
   &:hover {

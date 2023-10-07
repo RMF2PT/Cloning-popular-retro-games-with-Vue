@@ -1,14 +1,20 @@
+<template>
+  <button>{{ text }}</button>
+</template>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'GoBack'
+  name: 'GoBack',
+  props: {
+    text: {
+      type: String,
+      default: 'Please provide text for button!!!'
+    }
+  }
 })
 </script>
-
-<template>
-  <button @click="$router.back" class="go-back">Go back</button>
-</template>
 
 <style scoped lang="scss">
 @import '@/assets/_variables.scss';
@@ -18,15 +24,21 @@ button {
   font-family: inherit;
   width: 100px;
   padding: 5px;
-  color: #fff;
-  background-color: #2196f3;
+  margin-bottom: 1rem;
+  color: $color-text-light;
+  background-color: $color-button;
   border: none;
   border-radius: 10px;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
   user-select: none;
+  transition: all 0.1s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
 
   &:hover {
-    filter: brightness(110%);
+    background: lighten($color-button, 5%);
   }
 
   &:active,

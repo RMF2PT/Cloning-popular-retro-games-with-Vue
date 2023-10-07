@@ -23,6 +23,18 @@ body {
 }
 
 .center {
-  width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }

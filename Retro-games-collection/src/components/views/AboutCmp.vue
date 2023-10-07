@@ -135,22 +135,6 @@ export default defineComponent({
 <style scoped lang="scss">
 @import '@/assets/_variables.scss';
 
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 800px;
-  padding: 1rem;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
 h2 {
   text-align: center;
   font-size: 1.5rem;

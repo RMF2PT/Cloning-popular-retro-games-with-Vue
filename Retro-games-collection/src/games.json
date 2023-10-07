@@ -3,17 +3,23 @@
     {
       "id": 1,
       "name": "Tetris",
-      "image": "https://picsum.photos/200/200?grayscale"
+      "image": "https://picsum.photos/200/200?grayscale",
+      "description": "Tetris is a tile-matching puzzle video game originally designed and programmed by Soviet Russian software engineer Alexey Pajitnov. The first playable version was completed on June 6, 1984, while he was working for the Dorodnitsyn Computing Centre of the Academy of Sciences of the Soviet Union in Moscow. He derived its name from the Greek numerical prefix tetra- (all of the game's pieces contain four segments) and tennis, Pajitnov's favorite sport.",
+      "slug": "tetris"
     },
     {
       "id": 2,
       "name": "Tic-Tac-Toe",
-      "image": "https://picsum.photos/200/200?grayscale"
+      "image": "https://picsum.photos/200/200?grayscale",
+      "description": "Tic-tac-toe (American English), noughts and crosses (British English), or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.",
+      "slug": "tic-tac-toe"
     },
     {
       "id": 3,
       "name": "Rock, Paper, Scissors, Lizard, Spock",
-      "image": "https://picsum.photos/200/200?grayscale"
+      "image": "https://picsum.photos/200/200?grayscale",
+      "description": "Rock-paper-scissors (also known as scissors-rock-paper or other variants) is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are 'rock' (a closed fist), 'paper' (a flat hand), and 'scissors' (a fist with the index finger and middle finger extended, forming a V). 'Scissors' is identical to the two-fingered V sign (also indicating 'victory' or 'peace') except that it is pointed horizontally instead of being held upright in the air. A simultaneous, zero-sum game, it has only two possible outcomes: a draw, or a win for one player and a loss for the other.",
+      "slug": "rock-paper-scissors-lizard-spock"
     }
   ]
 }
