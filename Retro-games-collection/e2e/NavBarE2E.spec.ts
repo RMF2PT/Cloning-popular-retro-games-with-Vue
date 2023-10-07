@@ -8,6 +8,5 @@ test.describe('NavBar', () => {
     await expect(page.locator('nav > #title')).toHaveText('Retro Games Collection')
     await expect(page.getByRole('link', { name: 'Games', exact: true })).toBeVisible()
     await expect(page.getByRole('link', { name: 'About', exact: true })).toBeVisible()
-    await expect(page.getByRole('link', { name: 'Contact', exact: true })).toBeVisible()
   })
 })

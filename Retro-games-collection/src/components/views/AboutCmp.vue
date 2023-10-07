@@ -52,6 +52,7 @@ export default defineComponent({
     </section>
     <section>
       <h2>Other useful links</h2>
+      <p>Here's some more useful links:'</p>
       <ul>
         <li><a href="https://nodejs.org/en" target="_blank">Node.js</a></li>
         <li><a href="https://eslint.org/)" target="_blank">ESLint</a></li>
@@ -144,5 +145,39 @@ export default defineComponent({
   width: 80%;
   max-width: 800px;
   padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+ul {
+  margin-left: 2rem;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 </style>
