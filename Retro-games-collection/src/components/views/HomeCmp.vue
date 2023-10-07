@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <p>Home</p>
+  <div class="center">Home</div>
 </template>
 
 <style scoped lang="scss">

@@ -1,16 +1,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import GoBack from '@/components/GoBack.vue'
 
 export default defineComponent({
   name: 'GameCollection',
-  components: { GoBack }
+  components: {}
 })
 </script>
 
 <template>
-  <go-back></go-back>
-  <h1>Games Collection</h1>
+  <h1 class="center">Games Collection</h1>
 </template>
 
 <style scoped lang="scss">

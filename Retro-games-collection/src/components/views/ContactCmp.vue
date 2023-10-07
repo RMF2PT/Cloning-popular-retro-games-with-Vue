@@ -1,17 +1,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import GoBack from '@/components/GoBack.vue'
 
 export default defineComponent({
-  name: 'ContactCmp',
-  components: { GoBack },
-  data() {}
+  name: 'ContactCmp'
 })
 </script>
 
 <template>
-  <go-back></go-back>
-  <p>Contact</p>
+  <div class="center">Contact</div>
 </template>
 
 <style scoped lang="scss">

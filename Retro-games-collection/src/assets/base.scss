@@ -15,6 +15,17 @@ body {
   font-family: Roboto, sans-serif;
   color: $color-text;
   background: $color-background;
+  margin-top: 50px;
+}
+
+.container {
+  height: calc(100vh - $nav-height);
+  width: 100vw;
   display: flex;
   place-items: center;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
 }

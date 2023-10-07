@@ -1,16 +1,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import GoBack from '@/components/GoBack.vue'
 
 export default defineComponent({
   name: 'NotFound',
-  components: { GoBack }
+  components: {}
 })
 </script>
 
 <template>
-  <go-back></go-back>
-  <p>404 - Not Found</p>
+  <div class="center">404 - Not Found</div>
 </template>
 
 <style scoped lang="scss">

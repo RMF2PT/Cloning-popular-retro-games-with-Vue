@@ -11,6 +11,6 @@ describe('NavBar', () => {
     const titleText = wrapper.find('#title').text()
     expect(titleText).toBe('Retro Games Collection')
     expect(wrapper.find('span').exists()).toBe(true)
-    expect(wrapper.findAll('a').length).toBe(4)
+    expect(wrapper.findAll('router-link').length).toBe(4)
   })
 })
