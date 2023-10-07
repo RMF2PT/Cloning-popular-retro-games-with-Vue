@@ -7,9 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <span class="go-back">
-    <button @click="$router.back">Go back</button>
-  </span>
+  <button @click="$router.back" class="go-back">Go back</button>
 </template>
 
 <style scoped lang="scss">
@@ -20,7 +18,6 @@ button {
   font-family: inherit;
   width: 100px;
   padding: 5px;
-  margin: 10px;
   color: #fff;
   background-color: #2196f3;
   border: none;

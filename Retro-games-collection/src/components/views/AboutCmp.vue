@@ -134,4 +134,15 @@ export default defineComponent({
 
 <style scoped lang="scss">
 @import '@/assets/_variables.scss';
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 1rem;
+}
 </style>

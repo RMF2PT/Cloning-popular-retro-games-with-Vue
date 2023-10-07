@@ -21,16 +21,19 @@ export default defineComponent({
 @import '@/assets/_variables.scss';
 
 nav {
+  overflow: hidden;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100vw;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: $color-background-nav;
   z-index: 2;
+
+  span {
+    float: right;
+    display: flex;
+    gap: 10px;
+  }
 
   a {
     color: $color-text;
@@ -45,11 +48,6 @@ nav {
     &:active {
       color: darken($color: $color-text, $amount: 15%);
     }
-  }
-
-  span {
-    display: flex;
-    gap: 10px;
   }
 
   .app-active-link {

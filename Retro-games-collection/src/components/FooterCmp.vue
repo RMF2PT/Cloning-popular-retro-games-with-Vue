@@ -26,20 +26,29 @@ export default defineComponent({
 @import '@/assets/_variables.scss';
 
 footer {
-  // TODO Make the footer sticky
+  height: $footer-height;
+  overflow: hidden;
   position: fixed;
   bottom: 0;
-  left: 0;
-  height: $footer-height;
   width: 100vw;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: $color-background-footer;
   z-index: 2;
 
+  span {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  button {
+    float: left;
+  }
+
   a {
+    padding: 0 10px;
     color: $color-text;
     cursor: pointer;
     text-decoration: none;
@@ -52,11 +61,6 @@ footer {
     &:active {
       color: darken($color: $color-text, $amount: 15%);
     }
-  }
-
-  span {
-    display: flex;
-    gap: 10px;
   }
 }
 </style>
