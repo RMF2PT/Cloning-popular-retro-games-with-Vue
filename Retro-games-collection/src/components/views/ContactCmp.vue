@@ -9,7 +9,3 @@ export default defineComponent({
 <template>
   <div class="center">Contact</div>
 </template>
-
-<style scoped lang="scss">
-@import '@/assets/_variables.scss';
-</style>

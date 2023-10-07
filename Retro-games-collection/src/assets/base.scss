@@ -15,11 +15,15 @@ body {
   font-family: Roboto, sans-serif;
   color: $color-text;
   background: $color-background;
-  margin-top: 50px;
+  margin-top: $nav-height;
+  margin-bottom: $footer-height;
 }
 
 .container {
-  height: calc(100vh - $nav-height);
+  // TODO make the container not hide behind nav and footer
+  margin-top: $nav-height;
+  margin-bottom: $footer-height;
+  height: calc(100vh - $nav-height - $footer-height);
   width: 100vw;
   display: flex;
   place-items: center;

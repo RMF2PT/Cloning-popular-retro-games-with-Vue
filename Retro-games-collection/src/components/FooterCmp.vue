@@ -1,35 +1,42 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
+import GoBack from '@/components/GoBack.vue'
 
 export default defineComponent({
-  name: 'NavBar'
+  name: 'FooterCmp',
+  components: {
+    GoBack
+  }
 })
 </script>
 
 <template>
-  <nav>
-    <router-link to="/" id="title">Retro Games Collection</router-link>
+  <footer>
+    <go-back></go-back>
     <span>
-      <router-link to="/games">Games</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/contact">Contact</router-link>
+      <a href="https://twitter.com/RMF2PT/" target="_blank"> X </a>
+      <a href="https://github.com/RMF2PT/" target="_blank"> Github </a>
+      <a href="https://pt.linkedin.com/in/ricardomfferreira" target="_blank"> LinkedIn </a>
+      <a href="https://rmf2pt.com" target="_blank">My special place</a>
     </span>
-  </nav>
+  </footer>
 </template>
 
 <style scoped lang="scss">
 @import '@/assets/_variables.scss';
 
-nav {
+footer {
+  // TODO Make the footer sticky
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
+  height: $footer-height;
   width: 100vw;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $color-background-nav;
+  background: $color-background-footer;
   z-index: 2;
 
   a {
@@ -50,10 +57,6 @@ nav {
   span {
     display: flex;
     gap: 10px;
-  }
-
-  .app-active-link {
-    font-weight: bold;
   }
 }
 </style>
