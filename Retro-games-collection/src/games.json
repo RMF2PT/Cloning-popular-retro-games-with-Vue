@@ -1,0 +1,19 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Tetris",
+      "image": "https://picsum.photos/200/200?grayscale"
+    },
+    {
+      "id": 2,
+      "name": "Tic-Tac-Toe",
+      "image": "https://picsum.photos/200/200?grayscale"
+    },
+    {
+      "id": 3,
+      "name": "Rock, Paper, Scissors, Lizard, Spock",
+      "image": "https://picsum.photos/200/200?grayscale"
+    }
+  ]
+}
