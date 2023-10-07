@@ -2,8 +2,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'AboutCmp',
-  components: {}
+  name: 'AboutCmp'
 })
 </script>
 

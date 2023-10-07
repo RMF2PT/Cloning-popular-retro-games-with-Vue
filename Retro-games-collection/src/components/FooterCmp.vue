@@ -1,18 +1,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-import GoBack from '@/components/GoBack.vue'
 
 export default defineComponent({
-  name: 'FooterCmp',
-  components: {
-    GoBack
-  }
+  name: 'FooterCmp'
 })
 </script>
 
 <template>
   <footer>
-    <go-back></go-back>
     <span>
       <a href="https://twitter.com/RMF2PT/" target="_blank"> X </a>
       <a href="https://github.com/RMF2PT/" target="_blank"> Github </a>
@@ -41,10 +36,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-
-  button {
-    float: left;
   }
 
   a {

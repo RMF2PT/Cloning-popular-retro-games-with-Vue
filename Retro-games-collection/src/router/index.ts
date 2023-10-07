@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '@/components/views/HomeCmp.vue'
 import GameCollection from '@/components/views/GameCollection.vue'
 import About from '@/components/views/AboutCmp.vue'
+
 import NotFound from '@/components/views/NotFound.vue'
 
 const routes = [
