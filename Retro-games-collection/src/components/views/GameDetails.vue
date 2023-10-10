@@ -1,7 +1,10 @@
 <template>
   <div class="center">
     <h1>{{ game?.name }}</h1>
-    <buttonCmp text="Play"></buttonCmp>
+    <!-- Button to open the component TetrisGame.vue -->
+    <router-link :to="{ name: 'TetrisGame' }">
+      <buttonCmp text="Play" class="play-game-button">Play</buttonCmp>
+    </router-link>
     <img :src="game?.image" :alt="game?.name" />
     <p>{{ game?.description }}</p>
   </div>

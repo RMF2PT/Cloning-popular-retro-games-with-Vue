@@ -1,7 +1,6 @@
 import { describe, it, expect } from 'vitest'
-
 import { mount } from '@vue/test-utils'
-import FooterCmp from '@/components/FooterCmp.vue'
+import FooterCmp from '@/components/ui/FooterCmp.vue'
 
 describe('NavBar', () => {
   it('renders properly', () => {

@@ -25,6 +25,7 @@ nav {
   overflow: hidden;
   position: fixed;
   top: 0;
+  height: $navbar-height;
   width: 100vw;
   padding: 10px;
   background: $color-background-nav;

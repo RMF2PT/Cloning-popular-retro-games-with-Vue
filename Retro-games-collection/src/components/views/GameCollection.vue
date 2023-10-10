@@ -6,7 +6,7 @@
       v-for="game in games"
       :key="game.id"
       :to="{ name: 'game.details', params: { id: game.id, slug: game.slug } }"
-      class="card"
+      class="card game-link"
     >
       <img :src="game.image" :alt="game.name" />
       <h2>{{ game.name }}</h2>

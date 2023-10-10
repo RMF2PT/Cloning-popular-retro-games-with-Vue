@@ -187,3 +187,86 @@ The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/
 
 - Choosing to use TypeScript has shown that learning from a beginner's tutorial, which is usually coded with the Options API, can be more difficult. While Vue does support TypeScript usage with the Options API, it is recommended to use Vue with TypeScript via the Composition API, as it offers simpler, more efficient, and more robust type inference. Check this [page](https://vuejs.org/guide/typescript/options-api.html) for more information and this [page](https://www.programcreek.com/typescript/?api=vue.defineComponent) for some code examples.
 - Installed [FontAwesome Icons](https://fontawesome.com/v6/docs/web/use-with/vue/)
+- Keeping the navbar and footer on top of the center container:
+
+  ```css
+  body {
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  .container {
+    margin-top: $navbar-height;
+    margin-bottom: $footer-height;
+    height: calc(100vh - $navbar-height - $footer-height);
+    overflow: auto;
+  }
+  nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    height: $navbar-height;
+    width: 100vw;
+    padding: 10px;
+    background: $color-background-nav;
+    z-index: 2;
+
+    span {
+      float: right;
+      display: flex;
+      gap: 10px;
+    }
+
+    a {
+      color: $color-text;
+      cursor: pointer;
+      text-decoration: none;
+      user-select: none;
+      &:link,
+      &:visited {
+        color: inherit;
+      }
+      &:hover,
+      &:active {
+        color: darken($color: $color-text, $amount: 15%);
+      }
+    }
+
+    .app-active-link {
+      font-weight: bold;
+    }
+  }
+  footer {
+    height: $footer-height;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 10px;
+    background: $color-background-footer;
+    z-index: 2;
+
+    span {
+      float: right;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    a {
+      padding: 0 10px;
+      color: $color-text;
+      cursor: pointer;
+      text-decoration: none;
+      user-select: none;
+      &:link,
+      &:visited {
+        color: inherit;
+      }
+      &:hover,
+      &:active {
+        color: darken($color: $color-text, $amount: 15%);
+      }
+    }
+  }
+  ```

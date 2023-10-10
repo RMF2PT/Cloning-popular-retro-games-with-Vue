@@ -13,4 +13,11 @@ test.describe('GameCollection', () => {
       await expect(card).toBeVisible()
     }
   })
+
+  test('navigates to game details page when a game card is clicked', async ({ page }) => {
+    await page.goto('/#/games')
+    const gameLink = await page.waitForSelector('.game-link')
+    await gameLink.click()
+    await expect(page.locator('h1')).toHaveText('Tetris')
+  })
 })
