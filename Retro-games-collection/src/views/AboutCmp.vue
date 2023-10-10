@@ -1,11 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'AboutCmp'
-})
-</script>
-
 <template>
   <div class="center">
     <h1>Project: Cloning popular retro games with Vue</h1>
@@ -132,8 +124,16 @@ export default defineComponent({
   </div>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'AboutCmp'
+})
+</script>
+
 <style scoped lang="scss">
-@import '@/assets/_variables.scss';
+@import '@assets/_variables.scss';
 
 h2 {
   text-align: center;

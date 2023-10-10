@@ -17,7 +17,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/_variables.scss';
+@import '@assets/_variables.scss';
 
 button {
   cursor: pointer;

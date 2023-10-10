@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import sourceData from '@/games.json'
+import sourceData from '@games/games.json'
 
 export default defineComponent({
   name: 'GameCollection',
@@ -29,7 +29,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/_variables.scss';
+@import '@assets/_variables.scss';
 
 .card-container {
   display: flex;

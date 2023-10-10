@@ -1,11 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'NavBar'
-})
-</script>
-
 <template>
   <nav>
     <router-link to="/" id="title"
@@ -18,8 +10,16 @@ export default defineComponent({
   </nav>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'NavBar'
+})
+</script>
+
 <style scoped lang="scss">
-@import '@/assets/_variables.scss';
+@import '@assets/_variables.scss';
 
 nav {
   overflow: hidden;

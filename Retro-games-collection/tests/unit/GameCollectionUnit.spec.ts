@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { shallowMount } from '@vue/test-utils'
-import GameCollection from '@/components/views/GameCollection.vue'
+import GameCollection from '@views/GameCollection.vue'
 
 describe('GameCollection', () => {
   it('renders properly', () => {

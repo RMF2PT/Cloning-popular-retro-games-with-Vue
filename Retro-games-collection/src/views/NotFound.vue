@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import GoBack from '@/components/ui/GoBack.vue'
+import GoBack from '@ui/GoBack.vue'
 
 export default defineComponent({
   name: 'NotFound',

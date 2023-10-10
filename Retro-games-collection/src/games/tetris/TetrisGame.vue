@@ -16,11 +16,11 @@
       <buttonCmp id="retry-button" text="Retry">Retry</buttonCmp>
     </div>
     <audio id="background-music" loop>
-      <source src="@/assets/audio/Tetris.mp3" type="audio/mpeg" />
+      <source src="@assets/audio/Tetris.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
     <audio id="game-over-music">
-      <source src="@/assets/audio/game-over.mp3" type="audio/mpeg" />
+      <source src="@assets/audio/game-over.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
   </div>
@@ -28,7 +28,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import buttonCmp from '@/components/ui/ButtonCmp.vue'
+import buttonCmp from '@ui/ButtonCmp.vue'
 
 export default defineComponent({
   name: 'TetrisGame',
@@ -39,7 +39,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/_variables.scss';
+@import '@assets/_variables.scss';
 
 h1 {
   margin-bottom: 0.5rem;

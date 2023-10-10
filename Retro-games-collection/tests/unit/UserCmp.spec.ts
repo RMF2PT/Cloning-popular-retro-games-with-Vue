@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import UserCmp from '../UserCmp.vue'
+import UserCmp from '@/components/UserCmp.vue'
 
 describe('UserCmp', () => {
   it('renders the age properly', () => {

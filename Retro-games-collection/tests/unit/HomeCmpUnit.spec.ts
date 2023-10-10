@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { shallowMount } from '@vue/test-utils'
-import HomeCmp from '@/components/views/HomeCmp.vue'
+import HomeCmp from '@views/HomeCmp.vue'
 
 describe('HomeCmp', () => {
   it('renders the correct message', () => {

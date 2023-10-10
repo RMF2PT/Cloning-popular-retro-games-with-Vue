@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { shallowMount } from '@vue/test-utils'
-import AboutCmp from '@/components/views/AboutCmp.vue'
+import AboutCmp from '@views/AboutCmp.vue'
 
 describe('AboutCmp', () => {
   it('renders the correct message', () => {

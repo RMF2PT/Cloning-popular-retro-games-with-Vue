@@ -1,12 +1,17 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.json"],
-  "exclude": ["src/**/__tests__/*"],
+  "exclude": ["tests/unit/*"],
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@views/*": ["./src/views/*"],
+      "@stores/*": ["./src/stores/*"],
+      "@games/*": ["./src/games/*"],
+      "@ui/*": ["./src/components/ui/*"]
     }
   }
 }

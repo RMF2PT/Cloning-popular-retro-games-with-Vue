@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import buttonCmp from '@/components/ui/ButtonCmp.vue'
+import buttonCmp from '@ui/ButtonCmp.vue'
 
 export default defineComponent({
   name: 'GoBack',

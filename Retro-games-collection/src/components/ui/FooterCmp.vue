@@ -1,11 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'FooterCmp'
-})
-</script>
-
 <template>
   <footer>
     <span>
@@ -17,8 +9,16 @@ export default defineComponent({
   </footer>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'FooterCmp'
+})
+</script>
+
 <style scoped lang="scss">
-@import '@/assets/_variables.scss';
+@import '@assets/_variables.scss';
 
 footer {
   height: $footer-height;

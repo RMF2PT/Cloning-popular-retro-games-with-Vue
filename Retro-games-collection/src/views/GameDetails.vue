@@ -12,8 +12,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import sourceData from '@/games.json'
-import buttonCmp from '@/components/ui/ButtonCmp.vue'
+import sourceData from '@games/games.json'
+import buttonCmp from '@ui/ButtonCmp.vue'
 
 export default defineComponent({
   name: 'GameDetails',
@@ -28,14 +28,14 @@ export default defineComponent({
   },
   computed: {
     game() {
-      return sourceData.games.find((game) => game.id === this.id)
+      return sourceData.games.find((game: any) => game.id === this.id)
     }
   }
 })
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/_variables.scss';
+@import '@assets/_variables.scss';
 
 img {
   width: 100%;

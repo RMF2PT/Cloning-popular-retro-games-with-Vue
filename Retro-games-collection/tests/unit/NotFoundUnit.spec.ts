@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { shallowMount } from '@vue/test-utils'
-import NotFound from '@/components/views/NotFound.vue'
+import NotFound from '@views/NotFound.vue'
 
 describe('NotFound', () => {
   it('renders the correct message', () => {

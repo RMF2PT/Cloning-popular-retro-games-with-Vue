@@ -1,3 +1,9 @@
+<template>
+  <p>User is {{ age }} years old.</p>
+
+  <button type="button" @click="onClickAge">Increase age by 3</button>
+</template>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
 
@@ -21,9 +27,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<template>
-  <p>User is {{ age }} years old.</p>
-
-  <button type="button" @click="onClickAge">Increase age by 3</button>
-</template>
