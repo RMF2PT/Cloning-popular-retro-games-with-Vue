@@ -29,7 +29,7 @@ button {
   background-color: $color-button;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: $box-shadow;
   user-select: none;
   transition: all 0.1s ease-in-out;
 

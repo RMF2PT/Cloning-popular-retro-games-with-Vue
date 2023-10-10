@@ -54,17 +54,16 @@ h1 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: $color-text-light;
-  text-shadow: 0 0 10px #000;
+  color: $color-text;
 }
 
 #game-container {
   width: 300px;
   height: 600px;
   background: $color-background;
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 }
 
 #next-piece-label {
@@ -99,16 +98,16 @@ h1 {
   max-width: 600px;
   height: 200px;
   background: azure;
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px -5px;
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
   z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 3rem;
-  color: blue;
+  color: $color-secondary-1-3;
 
   & span {
     padding-top: 5px;

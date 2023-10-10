@@ -8,7 +8,7 @@
       :to="{ name: 'game.details', params: { id: game.id, slug: game.slug } }"
       class="card game-link"
     >
-      <img :src="game.image" :alt="game.name" />
+      <img :src="game.imageUrl" :alt="game.name" />
       <h2>{{ game.name }}</h2>
     </router-link>
   </div>
@@ -48,8 +48,8 @@ export default defineComponent({
   margin: 1rem;
   width: 200px;
   height: 200px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
   transition: all 0.3s ease-in-out;
 
   &:hover {
@@ -61,7 +61,7 @@ export default defineComponent({
 img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: $border-radius;
   object-fit: cover;
 }
 
@@ -70,7 +70,7 @@ h2 {
   position: absolute;
   color: $color-text-light;
   font-size: 1rem;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: $text-shadow;
   transition: all 0.3s ease-in-out;
   // wrap text
   word-wrap: break-word;

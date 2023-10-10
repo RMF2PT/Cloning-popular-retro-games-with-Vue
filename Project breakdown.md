@@ -270,3 +270,5 @@ The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/
     }
   }
   ```
+
+- Add the images for the game cards to the public folder. I've tried to put the images in the assets folder, but I couldn't get the URL for the src attribute on the component.

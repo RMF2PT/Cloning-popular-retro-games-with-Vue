@@ -5,7 +5,7 @@
     <router-link :to="{ name: 'TetrisGame' }">
       <buttonCmp text="Play" class="play-game-button">Play</buttonCmp>
     </router-link>
-    <img :src="game?.image" :alt="game?.name" />
+    <img :src="game?.imageUrl" :alt="game?.name" />
     <p>{{ game?.description }}</p>
   </div>
 </template>
@@ -41,8 +41,8 @@ img {
   width: 100%;
   max-width: 400px;
   margin-bottom: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 }
 
 p {
