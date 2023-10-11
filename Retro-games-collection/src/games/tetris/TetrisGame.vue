@@ -5,12 +5,12 @@
       <div id="highscore-display">High Score: <span id="highscore">0</span></div>
       <div id="score-display">Score: <span id="score">0</span></div>
       <div id="level-display">Level: <span id="level">1</span></div>
-      <buttonCmp id="start-button" text="Start">Start</buttonCmp>
+      <buttonCmp id="start-button" text="Start" @click="startGame">Start</buttonCmp>
     </div>
     <div id="game-container"></div>
     <div id="next-piece-label">Next Piece</div>
     <div id="next-piece-container"></div>
-    <div class="message-container" id="message-container">
+    <div class="message-container" id="message-container" v-show="isGameOver">
       <span>Game Over!</span>
       <font-awesome-icon icon="fa-solid fa-dice" />
       <buttonCmp id="retry-button" text="Retry">Retry</buttonCmp>
@@ -26,14 +26,45 @@
   </div>
 </template>
 
+<!-- <script setup lang="ts">
+import { defineComponent } from 'vue'
+import buttonCmp from '@ui/ButtonCmp.vue'
+import { mapStores, mapActions } from 'pinia'
+import useTetrisStore from '@stores/tetris'
+
+</script> -->
+
 <script lang="ts">
 import { defineComponent } from 'vue'
 import buttonCmp from '@ui/ButtonCmp.vue'
+import { mapStores, mapActions } from 'pinia'
+import useTetrisStore from '@stores/tetris'
 
 export default defineComponent({
   name: 'TetrisGame',
   components: {
     buttonCmp
+  },
+  data() {
+    return {
+      isGameOver: this.isGameOver
+    }
+  },
+  computed: {
+    ...mapStores('useTetrisStore')
+  },
+  methods: {
+    ...mapActions(useTetrisStore, ['setIsGameOver']),
+    // method to start the game
+    startGame() {
+      // set the isgameover to false
+      this.setIsGameOver(false)
+    },
+    // write a method to start the tetris music
+    startMusic() {
+      const music = document.getElementById('background-music') as HTMLAudioElement
+      music.play()
+    }
   }
 })
 </script>

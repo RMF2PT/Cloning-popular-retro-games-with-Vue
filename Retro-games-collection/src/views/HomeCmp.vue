@@ -6,7 +6,11 @@
   </section>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+</script>
+
+<!-- <script lang="ts">
 import { defineComponent } from 'vue'
 import { RouterLink } from 'vue-router'
 
@@ -16,7 +20,7 @@ export default defineComponent({
     RouterLink
   }
 })
-</script>
+</script> -->
 
 <style scoped lang="scss">
 @import '@assets/_variables.scss';

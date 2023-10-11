@@ -2,11 +2,23 @@
   <button>{{ text }}</button>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+// const props = defineProps({
+//   text: {
+//     type: String,
+//     default: 'Please provide text for button!!!'
+//   }
+// })
+withDefaults(defineProps<{ text: string }>(), {
+  text: 'Please provide text for button!!!'
+})
+</script>
+
+<!-- <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'GoBack',
+  name: 'ButtonCmp',
   props: {
     text: {
       type: String,
@@ -14,7 +26,7 @@ export default defineComponent({
     }
   }
 })
-</script>
+</script> -->
 
 <style scoped lang="scss">
 @import '@assets/_variables.scss';

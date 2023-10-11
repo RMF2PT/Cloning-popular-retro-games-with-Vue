@@ -9,13 +9,13 @@
   </footer>
 </template>
 
-<script lang="ts">
+<!-- <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'FooterCmp'
 })
-</script>
+</script> -->
 
 <style scoped lang="scss">
 @import '@assets/_variables.scss';

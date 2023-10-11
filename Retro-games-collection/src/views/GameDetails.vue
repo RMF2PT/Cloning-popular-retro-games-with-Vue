@@ -12,8 +12,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import sourceData from '@games/games.json'
 import buttonCmp from '@ui/ButtonCmp.vue'
+import sourceData from '@games/games.json'
 
 export default defineComponent({
   name: 'GameDetails',

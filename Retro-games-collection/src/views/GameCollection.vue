@@ -14,7 +14,14 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import sourceData from '@games/games.json'
+import { computed } from 'vue'
+
+const games = computed(() => sourceData.games)
+</script>
+
+<!-- <script lang="ts">
 import { defineComponent } from 'vue'
 import sourceData from '@games/games.json'
 
@@ -26,7 +33,7 @@ export default defineComponent({
     }
   }
 })
-</script>
+</script> -->
 
 <style scoped lang="scss">
 @import '@assets/_variables.scss';

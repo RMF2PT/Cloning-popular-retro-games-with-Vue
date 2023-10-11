@@ -5,7 +5,11 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import GoBack from '@ui/GoBack.vue'
+</script>
+
+<!-- <script lang="ts">
 import { defineComponent } from 'vue'
 import GoBack from '@ui/GoBack.vue'
 
@@ -15,4 +19,4 @@ export default defineComponent({
     GoBack
   }
 })
-</script>
+</script> -->
