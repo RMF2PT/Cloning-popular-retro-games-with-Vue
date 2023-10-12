@@ -7,6 +7,7 @@ import About from '@views/AboutCmp.vue'
 import NotFound from '@views/NotFound.vue'
 import TetrisGame from '@games/tetris/TetrisGame.vue'
 import TicTacToeGame from '@games/ticTacToe/TicTacToeGame.vue'
+import RockPaperScissorsLizardSpockGame from '@games/rockPaperScissorsLizardSpock/RockPaperScissorsLizardSpockGame.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -15,10 +16,16 @@ const routes = [
     path: '/games/:id/:slug',
     name: 'game.details',
     component: GameDetails
-    // props: (route: any) => ({ id: parseInt(route.params.id) }) // ! This is not necessary
+    // ! This is not necessary
+    // props: (route: any) => ({ id: parseInt(route.params.id) })
   },
   { path: '/playTetris', name: 'Tetris', component: TetrisGame },
   { path: '/playTicTacToe', name: 'Tic-Tac-Toe', component: TicTacToeGame },
+  {
+    path: '/playRockPaperScissorsLizardSpock',
+    name: 'Rock Paper Scissors Lizard Spock',
+    component: RockPaperScissorsLizardSpockGame
+  },
   { path: '/about', name: 'About', component: About },
   { path: '/:catchAll(.*)', name: 'Not found', component: NotFound }
 ]
