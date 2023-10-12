@@ -27,7 +27,6 @@
 </template>
 
 <!-- <script setup lang="ts">
-import { defineComponent } from 'vue'
 import buttonCmp from '@ui/ButtonCmp.vue'
 import { mapStores, mapActions } from 'pinia'
 import useTetrisStore from '@stores/tetris'

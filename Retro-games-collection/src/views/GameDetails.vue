@@ -2,7 +2,7 @@
   <div class="center">
     <h1>{{ game?.name }}</h1>
     <!-- Button to open the component TetrisGame.vue -->
-    <router-link :to="{ name: 'TetrisGame' }">
+    <router-link :to="{ name: gameName }">
       <buttonCmp text="Play" class="play-game-button">Play</buttonCmp>
     </router-link>
     <img :src="game?.imageUrl" :alt="game?.name" />
@@ -10,7 +10,20 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import buttonCmp from '@ui/ButtonCmp.vue'
+import sourceData from '@games/games.json'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const id = computed(() => Number(route.params.id))
+const game = computed(() => sourceData.games.find((game: any) => game.id === id.value))
+
+const gameName = computed(() => sourceData.games.find((game: any) => game.id === id.value)?.name)
+</script>
+
+<!-- <script lang="ts">
 import { defineComponent } from 'vue'
 import buttonCmp from '@ui/ButtonCmp.vue'
 import sourceData from '@games/games.json'
@@ -32,7 +45,7 @@ export default defineComponent({
     }
   }
 })
-</script>
+</script> -->
 
 <style scoped lang="scss">
 @import '@assets/_variables.scss';
