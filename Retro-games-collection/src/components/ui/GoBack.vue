@@ -1,9 +1,9 @@
 <template>
-  <buttonCmp @click="$router.back" text="Go back">Go back</buttonCmp>
+  <ButtonCmp @click="$router.back" text="Go back" />
 </template>
 
 <script setup lang="ts">
-import buttonCmp from '@ui/ButtonCmp.vue'
+import ButtonCmp from '@ui/ButtonCmp.vue'
 </script>
 
 <!-- <script lang="ts">

@@ -16,10 +16,10 @@
       </div>
       <div class="buttons">
         <!-- Button to start game -->
-        <buttonCmp id="start-button" text="Start" @click="startGame" v-if="isGameOver"></buttonCmp>
-        <buttonCmp id="restart-button" text="End game" @click="stopGame" v-else></buttonCmp>
+        <ButtonCmp id="start-button" text="Start" @click="startGame" v-if="isGameOver" />
+        <ButtonCmp id="restart-button" text="End game" @click="stopGame" v-else />
         <!-- Button to reset scores -->
-        <buttonCmp id="reset-score-button" text="Reset scores" @click="resetGame"></buttonCmp>
+        <ButtonCmp id="reset-score-button" text="Reset scores" @click="resetGame" />
       </div>
     </div>
     <!-- Create the game board -->
@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import buttonCmp from '@ui/ButtonCmp.vue'
+import ButtonCmp from '@ui/ButtonCmp.vue'
 import { reactive, ref } from 'vue'
 
 let computerScore = ref(0)

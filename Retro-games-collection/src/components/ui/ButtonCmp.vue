@@ -3,12 +3,6 @@
 </template>
 
 <script setup lang="ts">
-// const props = defineProps({
-//   text: {
-//     type: String,
-//     default: 'Please provide text for button!!!'
-//   }
-// })
 withDefaults(defineProps<{ text: string }>(), {
   text: 'Please provide text for button!!!'
 })

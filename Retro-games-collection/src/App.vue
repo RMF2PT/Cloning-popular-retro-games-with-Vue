@@ -1,9 +1,9 @@
 <template>
-  <nav-bar></nav-bar>
+  <NavBar />
   <div class="container">
-    <router-view></router-view>
+    <RouterView />
   </div>
-  <footer-cmp></footer-cmp>
+  <FooterCmp />
 </template>
 
 <script setup lang="ts">

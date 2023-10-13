@@ -5,15 +5,15 @@
       <div id="highscore-display">High Score: <span id="highscore">0</span></div>
       <div id="score-display">Score: <span id="score">0</span></div>
       <div id="level-display">Level: <span id="level">1</span></div>
-      <buttonCmp id="start-button" text="Start" @click="startGame">Start</buttonCmp>
+      <ButtonCmp id="start-button" text="Start" @click="startGame" />
     </div>
     <div id="game-container"></div>
     <div id="next-piece-label">Next Piece</div>
     <div id="next-piece-container"></div>
     <div class="message-container" id="message-container" v-show="isGameOver">
       <span>Game Over!</span>
-      <font-awesome-icon icon="fa-solid fa-dice" />
-      <buttonCmp id="retry-button" text="Retry">Retry</buttonCmp>
+      <FontAwesomeIcon icon="fa-solid fa-dice" />
+      <ButtonCmp id="retry-button" text="Retry" />
     </div>
     <audio id="background-music" loop>
       <source src="@assets/audio/Tetris.mp3" type="audio/mpeg" />
@@ -35,14 +35,16 @@ import useTetrisStore from '@stores/tetris'
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import buttonCmp from '@ui/ButtonCmp.vue'
+import ButtonCmp from '@ui/ButtonCmp.vue'
 import { mapStores, mapActions } from 'pinia'
 import useTetrisStore from '@stores/tetris'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 export default defineComponent({
   name: 'TetrisGame',
   components: {
-    buttonCmp
+    ButtonCmp,
+    FontAwesomeIcon
   },
   data() {
     return {

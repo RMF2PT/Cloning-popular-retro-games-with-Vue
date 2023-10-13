@@ -10,7 +10,7 @@
             ` -> ${playerChoice}`
           }}</span>
         </h2>
-        <font-awesome-icon
+        <FontAwesomeIcon
           class="far-icon player-option"
           :class="playerChoice === 'rock' ? 'selected' : ''"
           icon="fa-regular fa-hand-back-fist"
@@ -18,7 +18,7 @@
           id="player-rock"
           @click="select('rock')"
         />
-        <font-awesome-icon
+        <FontAwesomeIcon
           class="far-icon player-option"
           :class="playerChoice === 'paper' ? 'selected' : ''"
           icon="fa-regular fa-hand"
@@ -26,7 +26,7 @@
           id="player-paper"
           @click="select('paper')"
         />
-        <font-awesome-icon
+        <FontAwesomeIcon
           class="far-icon player-option"
           :class="playerChoice === 'scissors' ? 'selected' : ''"
           icon="fa-regular fa-hand-scissors"
@@ -34,7 +34,7 @@
           id="player-scissors"
           @click="select('scissors')"
         />
-        <font-awesome-icon
+        <FontAwesomeIcon
           class="far-icon player-option"
           :class="playerChoice === 'lizard' ? 'selected' : ''"
           icon="fa-regular fa-hand-lizard"
@@ -42,7 +42,7 @@
           id="player-lizard"
           @click="select('lizard')"
         />
-        <font-awesome-icon
+        <FontAwesomeIcon
           class="far-icon player-option"
           :class="playerChoice === 'spock' ? 'selected' : ''"
           icon="fa-regular fa-hand-spock"
@@ -59,14 +59,14 @@
             ` -> ${computerChoice}`
           }}</span>
         </h2>
-        <font-awesome-icon
+        <FontAwesomeIcon
           class="far-icon"
           :class="computerChoice === 'rock' ? 'selected' : ''"
           icon="fa-regular fa-hand-back-fist"
           title="Rock"
           id="computer-rock"
         />
-        <font-awesome-icon
+        <FontAwesomeIcon
           class="far-icon"
           :class="computerChoice === 'paper' ? 'selected' : ''"
           icon="fa-regular fa-hand"
@@ -74,21 +74,21 @@
           id="computer-paper"
         />
 
-        <font-awesome-icon
+        <FontAwesomeIcon
           class="far-icon"
           :class="computerChoice === 'scissors' ? 'selected' : ''"
           icon="fa-regular fa-hand-scissors"
           title="Scissors"
           id="computer-scissors"
         />
-        <font-awesome-icon
+        <FontAwesomeIcon
           class="far-icon"
           :class="computerChoice === 'lizard' ? 'selected' : ''"
           icon="fa-regular fa-hand-lizard"
           title="Lizard"
           id="computer-lizard"
         />
-        <font-awesome-icon
+        <FontAwesomeIcon
           class="far-icon"
           :class="computerChoice === 'spock' ? 'selected' : ''"
           icon="fa-regular fa-hand-spock"
@@ -97,7 +97,7 @@
         />
       </div>
       <!-- Reset -->
-      <font-awesome-icon
+      <FontAwesomeIcon
         class="reset-icon"
         icon="fa-solid fa-arrows-rotate reset-icon"
         title="Reset"
@@ -112,6 +112,7 @@
 </template>
 
 <script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { ref } from 'vue'
 
 const choices: { [key: string]: { name: string; defeats: string[] } } = {
@@ -177,7 +178,6 @@ const updateScore = () => {
     resultText.value = "It's a tie."
   } else {
     const choice = choices[playerChoice.value]
-    console.log(choice)
     if (choice.defeats.includes(computerChoice.value)) {
       resultText.value = 'You won!'
       playerScoreNumber.value++

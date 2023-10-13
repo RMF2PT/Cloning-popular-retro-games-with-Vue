@@ -2,13 +2,13 @@
   <section class="center">
     <h1>Welcome to my personal project</h1>
     <p>This is my playground for cloning classic retro games and training my developer skills</p>
-    <p>Check out all the games available <router-link to="/games">here</router-link></p>
+    <p>Check out all the games available <RouterLink to="/games" text="here" /></p>
   </section>
 </template>
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-</script>
+</script> -->
 
 <!-- <script lang="ts">
 import { defineComponent } from 'vue'

@@ -2,21 +2,21 @@
   <h1 class="center">Games Collection</h1>
   <!-- List the games in a card view -->
   <div class="card-container">
-    <router-link
-      v-for="game in games"
-      :key="game.id"
-      :to="{ name: 'game.details', params: { id: game.id, slug: game.slug } }"
+    <RouterLink
+      v-for="{ id, name, slug, imageUrl } in games"
+      :key="id"
+      :to="{ name: 'Game Details', params: { id: id, slug: slug } }"
       class="card game-link"
     >
-      <img :src="game.imageUrl" :alt="game.name" />
-      <h2>{{ game.name }}</h2>
-    </router-link>
+      <img :src="imageUrl" :alt="name" />
+      <h2>{{ name }}</h2>
+    </RouterLink>
   </div>
 </template>
 
 <script setup lang="ts">
-import sourceData from '@games/games.json'
 import { computed } from 'vue'
+import sourceData from '@games/games.json'
 
 const games = computed(() => sourceData.games)
 </script>

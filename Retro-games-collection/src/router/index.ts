@@ -14,10 +14,9 @@ const routes = [
   { path: '/games', name: 'Games Collection', component: GameCollection },
   {
     path: '/games/:id/:slug',
-    name: 'game.details',
-    component: GameDetails
-    // ! This is not necessary
-    // props: (route: any) => ({ id: parseInt(route.params.id) })
+    name: 'Game Details',
+    component: GameDetails,
+    props: (route: any) => ({ id: parseInt(route.params.id) })
   },
   { path: '/playTetris', name: 'Tetris', component: TetrisGame },
   { path: '/playTicTacToe', name: 'Tic-Tac-Toe', component: TicTacToeGame },

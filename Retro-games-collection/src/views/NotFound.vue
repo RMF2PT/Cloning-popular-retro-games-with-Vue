@@ -1,7 +1,7 @@
 <template>
   <div class="center">
     <h1>404 - Page not found</h1>
-    <go-back></go-back>
+    <GoBack />
   </div>
 </template>
 

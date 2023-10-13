@@ -2,25 +2,27 @@
   <div class="center">
     <h1>{{ game?.name }}</h1>
     <!-- Button to open the component TetrisGame.vue -->
-    <router-link :to="{ name: gameName }">
-      <buttonCmp text="Play" class="play-game-button">Play</buttonCmp>
-    </router-link>
+    <RouterLink :to="{ name: game?.name }">
+      <ButtonCmp text="Play" class="play-game-button" />
+    </RouterLink>
     <img :src="game?.imageUrl" :alt="game?.name" />
     <p>{{ game?.description }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
-import buttonCmp from '@ui/ButtonCmp.vue'
-import sourceData from '@games/games.json'
 import { computed } from 'vue'
-import { useRoute } from 'vue-router'
+import ButtonCmp from '@ui/ButtonCmp.vue'
+import sourceData from '@games/games.json'
 
-const route = useRoute()
-const id = computed(() => Number(route.params.id))
-const game = computed(() => sourceData.games.find((game: any) => game.id === id.value))
+const props = defineProps({
+  id: {
+    type: Number,
+    required: true
+  }
+})
 
-const gameName = computed(() => sourceData.games.find((game: any) => game.id === id.value)?.name)
+const game = computed(() => sourceData.games.find((game: any) => game.id === props.id))
 </script>
 
 <!-- <script lang="ts">

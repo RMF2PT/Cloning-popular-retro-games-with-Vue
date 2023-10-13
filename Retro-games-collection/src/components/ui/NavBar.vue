@@ -1,14 +1,19 @@
 <template>
   <nav>
-    <router-link to="/" id="title"
-      ><font-awesome-icon icon="fa-solid fa-dice" /> Retro Games Collection</router-link
-    >
+    <RouterLink to="/" id="title">
+      <FontAwesomeIcon icon="fa-solid fa-dice" />
+      Retro Games Collection
+    </RouterLink>
     <span>
-      <router-link to="/games">Games</router-link>
-      <router-link to="/about">About</router-link>
+      <RouterLink to="/games" text="Games" />
+      <RouterLink to="/about" text="About" />
     </span>
   </nav>
 </template>
+
+<script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+</script>
 
 <!-- <script lang="ts">
 import { defineComponent } from 'vue'
@@ -16,7 +21,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'NavBar'
 })
-</script> -->
+</> -->
 
 <style scoped lang="scss">
 @import '@assets/_variables.scss';

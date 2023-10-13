@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils'
+import { mount, shallowMount } from '@vue/test-utils'
 import { describe, it, expect } from 'vitest'
 import RockPaperScissorsLizardSpock from '@games/rockPaperScissorsLizardSpock/RockPaperScissorsLizardSpockGame.vue'
 
@@ -9,13 +9,13 @@ describe('RockPaperScissorsLizardSpock', () => {
     expect(title.text()).toBe('Rock Paper Scissors Lizard Spock')
   })
   it('should display the correct options', () => {
-    const wrapper = mount(RockPaperScissorsLizardSpock)
-    const options = wrapper.findAll('.player-option')
+    const wrapper = shallowMount(RockPaperScissorsLizardSpock)
+    const options = wrapper.findAllComponents('.player-option')
     expect(options).toHaveLength(5)
-    expect(options[0].wrapperElement.title).toBe('Rock')
-    expect(options[1].wrapperElement.title).toBe('Paper')
-    expect(options[2].wrapperElement.title).toBe('Scissors')
-    expect(options[3].wrapperElement.title).toBe('Lizard')
-    expect(options[4].wrapperElement.title).toBe('Spock')
+    expect(options[0].attributes('title')).toBe('Rock')
+    expect(options[1].attributes('title')).toBe('Paper')
+    expect(options[2].attributes('title')).toBe('Scissors')
+    expect(options[3].attributes('title')).toBe('Lizard')
+    expect(options[4].attributes('title')).toBe('Spock')
   })
 })
