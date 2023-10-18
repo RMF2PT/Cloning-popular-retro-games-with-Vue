@@ -8,20 +8,6 @@ withDefaults(defineProps<{ text: string }>(), {
 })
 </script>
 
-<!-- <script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'ButtonCmp',
-  props: {
-    text: {
-      type: String,
-      default: 'Please provide text for button!!!'
-    }
-  }
-})
-</script> -->
-
 <style scoped lang="scss">
 @import '@assets/_variables.scss';
 

@@ -25,30 +25,6 @@ const props = defineProps({
 const game = computed(() => sourceData.games.find((game: any) => game.id === props.id))
 </script>
 
-<!-- <script lang="ts">
-import { defineComponent } from 'vue'
-import buttonCmp from '@ui/ButtonCmp.vue'
-import sourceData from '@games/games.json'
-
-export default defineComponent({
-  name: 'GameDetails',
-  components: {
-    buttonCmp
-  },
-  props: {
-    id: {
-      type: Number,
-      required: true
-    }
-  },
-  computed: {
-    game() {
-      return sourceData.games.find((game: any) => game.id === this.id)
-    }
-  }
-})
-</script> -->
-
 <style scoped lang="scss">
 @import '@assets/_variables.scss';
 

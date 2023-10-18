@@ -24,31 +24,28 @@
     </div>
     <!-- Create the game board -->
     <div id="game-board">
-      <div class="game-cell" id="cell-1" @click="handleCellClick">{{ cell1 }}</div>
-      <div class="game-cell" id="cell-2" @click="handleCellClick">{{ cell2 }}</div>
-      <div class="game-cell" id="cell-3" @click="handleCellClick">{{ cell3 }}</div>
-      <div class="game-cell" id="cell-4" @click="handleCellClick">{{ cell4 }}</div>
-      <div class="game-cell" id="cell-5" @click="handleCellClick">{{ cell5 }}</div>
-      <div class="game-cell" id="cell-6" @click="handleCellClick">{{ cell6 }}</div>
-      <div class="game-cell" id="cell-7" @click="handleCellClick">{{ cell7 }}</div>
-      <div class="game-cell" id="cell-8" @click="handleCellClick">{{ cell8 }}</div>
-      <div class="game-cell" id="cell-9" @click="handleCellClick">{{ cell9 }}</div>
+      <GameCell
+        v-for="(cell, index) in grid"
+        :key="index"
+        :index="index + 1"
+        :value="cell"
+        @cell-click="handleCellClick"
+      />
     </div>
-    <div class="computer-playing-message" v-show="isComputerPlaying">
-      The computer is thinking...
-    </div>
+    <div class="computer-playing-message" v-show="isComputerPlaying">I'm thinking...</div>
     <div class="end-game-message" v-show="isEndGame">{{ endGameMessage }}</div>
   </div>
 </template>
 
 <script setup lang="ts">
 import ButtonCmp from '@ui/ButtonCmp.vue'
+import GameCell from './GameCell.vue'
 import { reactive, ref } from 'vue'
 
 let computerScore = ref(0)
 let humanScore = ref(0)
 let isGameOver = ref(true)
-let grid: any[] = reactive([])
+let grid: any[] = reactive(Array(9).fill(''))
 let cell1 = ref('')
 let cell2 = ref('')
 let cell3 = ref('')
@@ -115,19 +112,14 @@ const checkWinner = () => {
   return false
 }
 
-const handleCellClick = (event: any) => {
+const handleCellClick = (event: number) => {
   if (isGameOver.value || isComputerPlaying.value) return
-  for (let i = 0; i < grid.length; i++) {
-    if (`cell-${i + 1}` === `${event.target.id}`) {
-      if (grid[i] !== '') return
-      grid[i] = 'X'
-      updateCell()
-      if (checkWinner()) {
-        showEndGameMessage()
-        return
-      }
-      break
-    }
+  if (grid[event - 1] !== '') return
+  grid[event - 1] = 'X'
+  updateCell()
+  if (checkWinner()) {
+    showEndGameMessage()
+    return
   }
   computerTurn()
 }
@@ -262,30 +254,5 @@ const resetGame = () => {
   width: 300px;
   height: 300px;
   gap: 10px;
-}
-
-.game-cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: $color-background;
-  border: $border;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-  font-size: 3rem;
-  cursor: pointer;
-
-  &:hover {
-    background: $color-background-hover;
-  }
-
-  &:active {
-    background: $color-background-active;
-  }
-
-  &:disabled {
-    background: $color-background-disabled;
-    cursor: not-allowed;
-  }
 }
 </style>

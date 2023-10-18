@@ -1,6 +1,6 @@
 <template>
   <div class="center">
-    <h1>Project: Cloning popular retro games with Vue</h1>
+    <h1>Project: Cloning popular classic games with Vue</h1>
     <section>
       <h2>Introduction</h2>
       Welcome to my personal project. This is my playground to learn Vue+Vite with Typescript in a
@@ -87,8 +87,8 @@
         <li>TDD</li>
       </ul>
       <p>
-        I love video games, and so do my kids. So, I came up with the idea of recreating some retro
-        games like Tetris and Tic-Tac-Toe using HTML, CSS, and JavaScript.
+        I love video games, and so do my kids. So, I came up with the idea of recreating some
+        classic games like Tetris and Tic-Tac-Toe using HTML, CSS, and JavaScript.
       </p>
       <p>
         It should have a main page where the user can choose the game to play, and then each game
@@ -123,14 +123,6 @@
     </section>
   </div>
 </template>
-
-<!-- <script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'AboutCmp'
-})
-</script> -->
 
 <style scoped lang="scss">
 @import '@assets/_variables.scss';

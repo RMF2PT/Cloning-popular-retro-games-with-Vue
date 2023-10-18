@@ -21,20 +21,6 @@ import sourceData from '@games/games.json'
 const games = computed(() => sourceData.games)
 </script>
 
-<!-- <script lang="ts">
-import { defineComponent } from 'vue'
-import sourceData from '@games/games.json'
-
-export default defineComponent({
-  name: 'GameCollection',
-  data() {
-    return {
-      games: sourceData.games
-    }
-  }
-})
-</script> -->
-
 <style scoped lang="scss">
 @import '@assets/_variables.scss';
 

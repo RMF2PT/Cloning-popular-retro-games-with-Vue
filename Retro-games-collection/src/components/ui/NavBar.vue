@@ -2,7 +2,7 @@
   <nav>
     <RouterLink to="/" id="title">
       <FontAwesomeIcon icon="fa-solid fa-dice" />
-      Retro Games Collection
+      Classic Games Collection
     </RouterLink>
     <span>
       <RouterLink to="/games" text="Games" />
@@ -14,14 +14,6 @@
 <script setup lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
-
-<!-- <script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'NavBar'
-})
-</> -->
 
 <style scoped lang="scss">
 @import '@assets/_variables.scss';
